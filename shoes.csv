@@ -1,0 +1,7 @@
+test.id,test.description,http.path,http.method,parameters,assertion
+1,Get all the shoes,/shoes/,GET,,[]
+2,Add a new shoe - id=1,/shoes/,POST,"{""title"":""new shoe1"",""author"":""Tompson Li""}",Tompson Li
+3,Get the first shoe details,/shoes/1,GET,,Tompson Li
+4,Replace the first shoe details + add price,/shoes/1,PUT,"{""title"":""new shoe"",""author"":""Tompson Li"",""price"":""$10.00""}","""$10.00"""
+5,Update the title of the first shoe,/shoes/1,PATCH,"{""title"":""old shoe""}",
+6,Delete the first shoe,/shoes/1,DELETE,,
